@@ -1,0 +1,17 @@
+Install dependencies:
+pip install tweepy
+pip install textblob
+
+Register for twitter API
+1. Twitter account - https://twitter.com/
+2. Create new app - https://apps.twitter.com/
+2.1. Usage:
+	Consumer Key (API Key)
+	Consumer Secret (API Secret)
+	Access Token
+	Access Token Secret
+
+Useful links:
+https://textblob.readthedocs.io/en/dev/index.html#
+http://tweepy.readthedocs.io/en/v3.5.0/getting_started.html#introduction
+
