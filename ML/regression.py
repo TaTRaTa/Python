@@ -34,13 +34,13 @@ y = np.array(data['label'])
 x_train, x_test, y_train, y_test = cross_validation.train_test_split(x, y, test_size=0.2)
 # print(x_train.shape, y_train.shape)
 # print(x_test.shape, y_test.shape)
-# lines below must be executed only first run time
-clr = LinearRegression()
-# clr = svm.SVR(kernel='poly')
-clr.fit(x_train, y_train)
-# lines below must be executed only first run time
-with open('linear_reg.pickle', 'wb') as f:
-    pickle.dump(clr, f)
+# # Lines below must be executed only first run time
+# clr = LinearRegression()
+# # clr = svm.SVR(kernel='poly')
+# clr.fit(x_train, y_train)
+# # lines below must be executed only first run time
+# with open('linear_reg.pickle', 'wb') as f:
+#     pickle.dump(clr, f)
 
 pickle_in = open('linear_reg.pickle', 'rb')
 clr = pickle.load(pickle_in)
